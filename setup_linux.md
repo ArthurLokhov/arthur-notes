@@ -92,7 +92,7 @@ gamemoderun %command%
 gamemoderun
 ```
 
-## Настройка программного обеспечения для разработки(Java)
+## Настройка программного обеспечения для разработки(Golang)
 1. Установка необходимых для сборки и компиляции утилит
 ```
 sudo apt-get update
@@ -109,48 +109,10 @@ fc-cache -f -v
 ```
 sudo apt-get install zsh
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-curl -sS https://starship.rs/install.sh | sh
-mkdir -p ~/.config && touch ~/.config/starship.toml
 ```
 
-Настроить `Starship` на свое усмотрение
-
-3. Установка `Java` и его настройка
-
-`version` - версия Java
-`candidate` - советую выбирать OpenJDK(open)
-Например: sdk install java 18.0.0.1-open
-```
-curl -s "https://get.sdkman.io" | zsh
-sdk version
-sdk install java [version]-[candidate]
-```
-4. Установка `Visual Studio Code`, настройка его плагинов
-Установите XML от Red Hat
-Установите Dependency Analytics от Red Hat
-Установите Extension Pack for Java от Microsoft
-6. (Опционально) Установка и настройка `Dbeaver` и `PostgreSQL`
-Скачать [Dbeaver](https://dbeaver.io/download/) и установить его. 
-Зайти в Install New Software и установить темную тему https://www.genuitec.com/updates/devstyle/ci/
-```
-sudo apt-get update
-sudo apt install postgresql postgresql-contrib
-```
-
-Настроить базу данных
-```
-sudo -i -u postgres
-createuser --interactive
-createdb [user]
-exit
-```
-
-Теперь можно войти в пользователя
-```
-sudo -u [user] psql
-```
-
-7. (Опционально) Установить [SceneBuilder](https://gluonhq.com/products/scene-builder/#download) для `JavaFX`
-
-8. (Опционально) Установка и Настройка `Docker`
+3. Установка Golang
 Позже появится
+
+4. Установка PSQL/MongoDB
+Позже появится=
