@@ -1,24 +1,24 @@
-# Установка и настройка PostgreSQL или MariaDB
+# Installing and configuring PostgreSQL or MariaDB
 
-## Подготовка к установке
+## Preparing for installation
 
-1. Обновление зеркал и установка необходимых программ
-`mosh` - более безопасный ssh, автоматически восстанавливает соединение, а также работает даже на телефоне
+1. Updating mirrors and installing the necessary programs.
+`mosh` - more secure ssh, automatically reconnects, and also works even on the phone.
 ```
 sudo apt-get update
 sudo apt-get install -y git curl wget zip unzip gcc build-essential make mosh
 sudo apt-get install -y libreadline-dev zlibc zlib1g-dev
 ```
 
-## Установка и настройка PostgreSQL
-1. Установка PSQL
+## Installing and configuring PostgreSQL
+1. Install PSQL.
 ```
 sudo apt-get update && sudo apt-get install -y postgresql postgresql-contrib
 ```
 
-2. Создание пользователя и его базы данных
+2. Creating a user and his database.
 
-Имя пользователя и базы данных должно совпадать с основным пользователем Linux, тогда можно будет заходить просто использую `psql`.
+The username and database must match the main Linux user, then you can just log in using `psql`.
 ```
 sudo -i -u postgres
 createuser --interactive
@@ -26,40 +26,40 @@ createdb [user]
 exit
 ```
 
-3. Заходим в базу данных.
+3. We go into the database.
 
-Если имя пользователей совпадает.
+If the user name matches.
 ```
 psql
 ```
 
-Если создан другой пользователь
+If another user is created.
 ```
 sudo adduser [user]
 sudo -u [user] psql
 ```
 
-Проверем соединение
+Let's check the connection.
 ```
 \conninfo
 ```
 
-Выдаст, что-то похожее:
+It will give something like:
 ```
 You are connected to database "dfr" as user "dfr" via socket in "/var/run/postgresql" at port "5432".
 
 ```
 
-## Установка и настройка MariaDB
-1. Установка MariaDB
+## Installing and configuring MariaDB
+1. Install MariaDB.
 ```
 sudo apt-get install -y mariadb-server mariadb-client
 sudo mysql_secure_installation
 ```
 
-2. Создание пользователя и его базы данных
+2. Creating a user and his database.
 
-Имя пользователя и базы данных должно совпадать с основным пользователем Linux.
+The user and database name must match the primary Linux user.
 ```
 sudo mariadb -u root
 CREATE DATABASE [user_db] COLLATE 'utf8_general_ci';

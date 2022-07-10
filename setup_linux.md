@@ -1,34 +1,34 @@
-# Настройка linux
+# Configuring linux
 
-## Настройка Linux дистрибутива
-1. Обновить систему
+## Configuring the Linux distribution
+1. Update the system
 ```
 sudo apt-get update && sudo apt-get upgrade
 ```
-2. Установка `ttf-mscorefonts-installer` с помощью `Software Manager`
+2. Installing `ttf-mscorefonts-installer` using `Software Manager`
 
-3. Настройка раскладки клавиатуры, добавление поддержки русского языка (Я всегда ставлю английскую версию системы, поэтому русского изначально нима)
+3. Setting up the keyboard layout, adding support for the Russian language(I always put the English version of the system, so Russian is not initially available).
 
-4. Установка мульти-кодеков (смотреть под свой дистрибутив) для Linux, в данном случае Mint
+4. Installing multi-codecs (look under your distribution) for Linux, in this case Mint
 ```
 sudo apt-get update && sudo apt-get install mint-meta-codecs
 ```
 
-5. (Опционально) Установить `Snap`
+5. (Optional) Install `Snap`
 ```
 sudo rm /etc/apt/prefernces.d/nosnap.pref
 sudo apt-get update && sudo apt-get install snapd
 sudo snap version
 ```
 
-6. (Опционально) Настроить [TimeShift](https://zen.yandex.ru/media/gothicserge/rezervnoe-kopirovanie-linux-mint-ispolzuem-timeshift-60f01cab584b027c4d32cc64)
+6. (Optional) To configure [TimeShift](https://zen.yandex.ru/media/gothicserge/rezervnoe-kopirovanie-linux-mint-ispolzuem-timeshift-60f01cab584b027c4d32cc64)
 
-7. Перезагрузить компьютер
+7. Restart the computer
 
-## Настройка драйверов
-1. На выбор либо `nVidia`, либо `AMD/Intel`
+## Configuring Drivers
+1. Choose from either `nVidia` or `AMD/Intel`
 
-Версию драйвера `nVidia` надо узнать на сайте `nVidia`
+The version of the `nVidia` driver should be found on the `nVidia` website
 ```
 sudo add-apt-repository ppa:graphics-drivers/ppa
 sudo apt-get install nvidia-driver-[version] libnvidia-gl-[version] libnvidia-gl-[version]:i386
@@ -41,19 +41,19 @@ sudo apt-get install libgl1-mesa-dri:i386
 sudo apt-get install mesa-vulkan-drivers mesa-vulkan-drivers:i386
 ```
 
-2. Перезагрузить компьютер
+2. Restart the computer
 
-## Настройка программного обеспечения и Linux для повседневного использования
+## Configuring software and Linux for everyday use
 
-1. Установить `Yandex Browser` и настроить его
-Переходим по [пути](browser://flags) и включаем `System window controls` 
-2. Установить обои и тему приложений, иконок, курсора
-3. Установить `Telegram`
-4. (Опционально) Установить `Discord`
+1. Install 'Yandex Browser` and configure it
+Go to [path](browser://flags) and turn on `System windows controls` 
+2. Set wallpaper and theme of apps, icons, cursor
+3. Install `Telegram`
+4. Install `Discord`
 
-## Настройка программного обеспечения для игр
+## Setting up software for Games
 
-1. Установка `Wine`
+1. Install `Wine`
 ```
 sudo dpkg --add-architecture i386
 wget -nc https://dl.winehq.org/wine-builds/winehq.key
@@ -62,25 +62,25 @@ sudo apt-add-repository 'deb https://dl.winehq.org/wine-builds/ubuntu focal main
 sudo apt-get update
 sudo apt-get install --install-recommends wine-staging 
 
-<!-- Зачастую предыдущая команда установит все это -->
+<!-- Often the previous command will install all of this -->
 sudo apt-get install libgnutls30:i386 libldap-2.4-2:i386 libgpg-error0:i386 libxml2:i386 libasound2-plugins:i386 libsdl2-2.0-0:i386 libfreetype6:i386 libdbus-1-3:i386 libsqlite3-0:i386
 ```
-2. Установка `Lutris`
+2. Install `Lutris`
 ```
 sudo add-apt-repository ppa:lutris-team/lutris
 sudo apt-get update
 sudo apt-get install lutris
 ```
-3. Установка и настройка `Steam`, подключение `gamemode`
+3. Installing and configuring `Steam`, connecting `gamemode`
 ```
 sudo apt-get install steam
 ```
-Дальше требуется включить `Steam Play` и перезапустить сам `Steam`.
+Next, you need to turn on `Steam Play` and restart `Steam` itself.
 ```
 sudo apt-get install gamemode
 ```
 
-После установить в параметрах запуска игры 
+After set in the game launch parameters
 
 `Steam`:
 ```
@@ -92,15 +92,15 @@ gamemoderun %command%
 gamemoderun
 ```
 
-## Настройка программного обеспечения для разработки(Golang)
-1. Установка необходимых для сборки и компиляции утилит
+## Basic setup for development
+1. Installation of utilities required for assembly and compilation
 ```
 sudo apt-get update
 sudo apt-get install -y make git curl wget vim gcc build-essential
 ```
-2. Настройка терминала
+2. Setting up the terminal
 
-Установить [Hack  NF](https://www.nerdfonts.com/font-downloads) или любой другой
+Install [Hack  NF](https://www.nerdfonts.com/font-downloads) or any other
 ```
 mv Hack ~/.local/share/fonts
 fc-cache -f -v 
@@ -110,9 +110,3 @@ fc-cache -f -v
 sudo apt-get install zsh
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
-
-3. Установка Golang
-Позже появится
-
-4. Установка PSQL/MongoDB
-Позже появится=

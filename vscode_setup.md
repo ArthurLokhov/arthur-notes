@@ -1,12 +1,12 @@
-# Настройка Visual Studio Code
-## Плагины
-- `Go` by Go Team at Google- основной плагин для работы с Golang.
-- `Path Intellisense` by Christian Kohler - автодополнение при манипуляции с путями файлов и директорий.
-- `Russian Language Pack for VSCode` by Microsoft - перевод UI приложения на русский.
-- `seti-icons` by qinjia - заменяет иконки файлов, также у файлов `.go` иконка с гофером.
-- `GlassIt Linux` by nowsci - расширение, чтобы настроить прозрачность VSCode в Linux
-## Глобальный settings.json(данный файл опубликован в моем другом репозитории `arthur-dotfiles`)
-1. Настройки для Golang
+# Setting up Visual Studio Code
+## Extensions
+- `Better Comments` by Aaron Bond
+- `Material Icon Theme` by Philipp Kief
+- `Night Owl` by sarah.drasner
+- `Path Intellisense` by Christian Kohler
+- `GlassIt Linux` by nowsci
+## Global settings.json (this file is published in my other repository `arthur-dotfiles`)
+<!-- 1. Настройки для Golang
 Если файл покрыт тестами, то в редакторе будет подсвечиваться какие функции покрыты, а какие еще нет.
 ```json
 "go.coverOnSave": true,
@@ -18,8 +18,8 @@
     "uncoveredGutterStyle": "blockred",
 },
 "go.coverOnSingleTest": true,
-``` 
-2. Сокрытие лишних панелей VSCode(я минималист)
+``` -->
+1. Hiding extra panels VS Code (I'm a minimalist).
 ```json
 "workbench.activityBar.visible": false,
 "workbench.editor.showTabs": false,
@@ -41,8 +41,8 @@
 "editor.overviewRulerBorder": false,
 ```
 
-3. Настройки шрифта
-У меня включены лишь определенные лигатуры, остальные отключены.
+3. Font Settings
+I have only certain ligatures enabled, the rest are disabled.
 ```json
 "editor.fontSize": 14,
 "editor.fontLigatures": "'ss01', 'ss02', 'ss03', 'ss04', 'ss05', 'ss06', 'zero', 'onum'",
@@ -50,7 +50,7 @@
 "editor.fontWeight": "350",
 ```
 
-Некие манипуляции с цветами, стилями шрифта для определенных мест в коде
+Some manipulations with colors, font styles for certain places in the code.
 ```json
 "editor.tokenColorCustomizations": {
     "textMateRules": [
@@ -83,9 +83,9 @@
     ]
 },
 ```
-## Дополнительная настройка различных фишек(протестировано только из под Linux)
-1. Для установки прозрачности редактора надо установить следующие утилиты
+## Additional configuration of various chips (tested only under Linux)
+1. To set the transparency of the editor, you need to install the following utilities.
 ```
 sudo apt install -y wmctrl x11-utils bash
 ```
-А также установить расширение `GlassIt Linux` by nowsci
+And also install the extension `GlassIt Linux` by nowsci.
