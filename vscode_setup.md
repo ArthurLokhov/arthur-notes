@@ -1,10 +1,28 @@
 # Setting up Visual Studio Code
 ## Extensions
+
+### Main
 - `Better Comments` by Aaron Bond
+- `Path Intellisense` by Christian Kohler
+- `EditorConfig for VS Code` by EditorConfig
+- `Semicolon Insertation Shortcut` by Christian Valentian
+
+### Customization
 - `Material Icon Theme` by Philipp Kief
 - `Night Owl` by sarah.drasner
-- `Path Intellisense` by Christian Kohler
 - `GlassIt Linux` by nowsci
+
+### Php
+- `Php Intelephense` by Ben Mewburn
+- `Php Debug` by Xdebug
+- `Php Sniffer` by wongjn
+
+## Php Setup
+1. Disable @builtin `PHP Language Features`
+2. Install `Php Intelephense`
+3. Install `Php Debug`
+4. Install `PHP Sniffer`
+
 ## Global settings.json (this file is published in my other repository `arthur-dotfiles`)
 <!-- 1. Настройки для Golang
 Если файл покрыт тестами, то в редакторе будет подсвечиваться какие функции покрыты, а какие еще нет.
