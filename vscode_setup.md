@@ -1,31 +1,38 @@
 # Setting up Visual Studio Code
+
 ## Extensions
 
 ### Main
+
 - `Better Comments` by Aaron Bond
 - `Path Intellisense` by Christian Kohler
 - `EditorConfig for VS Code` by EditorConfig
 - `Semicolon Insertation Shortcut` by Christian Valentian
+- `Error Lens` by Alexander
+- `Project Manager` by Alessandro Fragnani
+- `Quit Control for VSCode` by Artur Diniz Adam
+
+### HTML & CSS
+
+- `HTML CSS Support` by ecmel
+- `IntelliSense for CSS class names in HTML` by Zignd
+
+### JavaScript
+
+- `Prettier - Code formatter` by Prettier
+- `ESLint` by Microsoft
+- `Babel JavaScript` by Michael McDermott
+- `npm Intellisense` by Christian Kohler
+- `Sort JSON objects` by richie5um2
 
 ### Customization
-- `Material Icon Theme` by Philipp Kief
+
 - `Night Owl` by sarah.drasner
 
 ## Global settings.json (this file is published in my other repository `arthur-dotfiles`)
-<!-- 1. Настройки для Golang
-Если файл покрыт тестами, то в редакторе будет подсвечиваться какие функции покрыты, а какие еще нет.
-```json
-"go.coverOnSave": true,
-"go.coverageDecorator": {
-    "type": "gutter",
-    "coveredHighlightColor": "rgba(64,128,128,0.5)",
-    "uncoveredHighlightColor": "rgba(128,64,64,0.25)",
-    "coveredGutterStyle": "blockgreen",
-    "uncoveredGutterStyle": "blockred",
-},
-"go.coverOnSingleTest": true,
-``` -->
+
 1. Hiding extra panels VS Code (I'm a minimalist).
+
 ```json
 "workbench.activityBar.visible": false,
 "workbench.editor.showTabs": false,
@@ -48,7 +55,8 @@
 ```
 
 3. Font Settings
-I have only certain ligatures enabled, the rest are disabled.
+   I have only certain ligatures enabled, the rest are disabled.
+
 ```json
 "editor.fontSize": 14,
 "editor.fontLigatures": "'ss01', 'ss02', 'ss03', 'ss04', 'ss05', 'ss06', 'zero', 'onum'",
@@ -57,6 +65,7 @@ I have only certain ligatures enabled, the rest are disabled.
 ```
 
 Some manipulations with colors, font styles for certain places in the code.
+
 ```json
 "editor.tokenColorCustomizations": {
     "textMateRules": [
@@ -88,4 +97,17 @@ Some manipulations with colors, font styles for certain places in the code.
         }
     ]
 },
+```
+
+4. JavaScript Settings
+
+```json
+"javascript.inlayHints.enumMemberValues.enabled": true,
+"javascript.inlayHints.functionLikeReturnTypes.enabled": true,
+"javascript.inlayHints.parameterNames.enabled": "literals",
+"javascript.inlayHints.parameterTypes.enabled": true,
+"javascript.inlayHints.propertyDeclarationTypes.enabled": true,
+"javascript.inlayHints.variableTypes.enabled": true,
+"javascript.updateImportsOnFileMove.enabled": "always",
+"js/ts.implicitProjectConfig.checkJs": true,
 ```
