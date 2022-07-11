@@ -10,18 +10,6 @@
 ### Customization
 - `Material Icon Theme` by Philipp Kief
 - `Night Owl` by sarah.drasner
-- `GlassIt Linux` by nowsci
-
-### Php
-- `Php Intelephense` by Ben Mewburn
-- `Php Debug` by Xdebug
-- `Php Sniffer` by wongjn
-
-## Php Setup
-1. Disable @builtin `PHP Language Features`
-2. Install `Php Intelephense`
-3. Install `Php Debug`
-4. Install `PHP Sniffer`
 
 ## Global settings.json (this file is published in my other repository `arthur-dotfiles`)
 <!-- 1. Настройки для Golang
@@ -101,9 +89,3 @@ Some manipulations with colors, font styles for certain places in the code.
     ]
 },
 ```
-## Additional configuration of various chips (tested only under Linux)
-1. To set the transparency of the editor, you need to install the following utilities.
-```
-sudo apt install -y wmctrl x11-utils bash
-```
-And also install the extension `GlassIt Linux` by nowsci.
