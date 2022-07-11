@@ -50,7 +50,13 @@ Go to [path](browser://flags) and turn on `System windows controls`
 2. Set wallpaper and theme of apps, icons, cursor
 3. Install `Telegram`
 4. Install `Discord`
-
+Better Discord: https://github.com/BetterDiscord/BetterDiscord
+5. Install `Surfshark`
+```
+sudo apt install ./surfshark-release_[version]_amd64.deb
+sudo apt update
+sudo apt install surfshark
+```
 ## Setting up software for Games
 
 1. Install `Wine`
