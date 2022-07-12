@@ -5,29 +5,14 @@
 ### Main
 
 - `Better Comments` by Aaron Bond
-- `Path Intellisense` by Christian Kohler
-- `EditorConfig for VS Code` by EditorConfig
-- `Semicolon Insertation Shortcut` by Christian Valentian
-- `Error Lens` by Alexander
-- `Project Manager` by Alessandro Fragnani
 - `Quit Control for VSCode` by Artur Diniz Adam
 
-### HTML & CSS
-
-- `HTML CSS Support` by ecmel
-- `IntelliSense for CSS class names in HTML` by Zignd
-
-### JavaScript
-
-- `Prettier - Code formatter` by Prettier
-- `ESLint` by Microsoft
-- `Babel JavaScript` by Michael McDermott
-- `npm Intellisense` by Christian Kohler
-- `Sort JSON objects` by richie5um2
+### C# and .Net
+Soon
 
 ### Customization
-
 - `Night Owl` by sarah.drasner
+- `Material Theme Icons` by Equinusocio
 
 ## Global settings.json (this file is published in my other repository `arthur-dotfiles`)
 
@@ -99,15 +84,7 @@ Some manipulations with colors, font styles for certain places in the code.
 },
 ```
 
-4. JavaScript Settings
+4. C# Settings
 
 ```json
-"javascript.inlayHints.enumMemberValues.enabled": true,
-"javascript.inlayHints.functionLikeReturnTypes.enabled": true,
-"javascript.inlayHints.parameterNames.enabled": "literals",
-"javascript.inlayHints.parameterTypes.enabled": true,
-"javascript.inlayHints.propertyDeclarationTypes.enabled": true,
-"javascript.inlayHints.variableTypes.enabled": true,
-"javascript.updateImportsOnFileMove.enabled": "always",
-"js/ts.implicitProjectConfig.checkJs": true,
 ```

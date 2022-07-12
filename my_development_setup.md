@@ -1,16 +1,19 @@
 # Setting up my work environment
 
-## Install NodeJS
-1. Install NVM
+## Install and configure .Net
+1. Install Snap
 ```
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | zsh
-source ~/.zshrc
+sudo rm /etc/apt/prefernces.d/nosnap.pref
+sudo apt-get update && sudo apt-get install snapd
+sudo snap version
 ```
-
-2. Install NodeJS
+2. Install .Net
 ```
-nvm list-remote
-nvm install [version]
-nvm list
-nvm use [version]
+sudo snap install dotnet-sdk --classic --channel=[version]
+sudo snap alias dotnet-sdk.dotnet dotnet
+```
+ 
+3. Export .Net Path
+```
+export DOTNET_ROOT=/snap/dotnet-sdk/current
 ```
