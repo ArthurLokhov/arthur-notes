@@ -40,7 +40,7 @@ Soon
 ```
 
 3. Font Settings
-   I have only certain ligatures enabled, the rest are disabled.
+I have only certain ligatures enabled, the rest are disabled.
 
 ```json
 "editor.fontSize": 14,

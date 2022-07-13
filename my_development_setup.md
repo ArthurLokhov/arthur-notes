@@ -1,4 +1,4 @@
-# Setting up my work environment
+# Setting up my work environment(Linux)
 
 ## Install and configure .Net
 1. Install Snap
