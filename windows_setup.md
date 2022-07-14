@@ -28,14 +28,8 @@ winget install Microsoft.PowerToys --source winget
 1. Переходим по [ссылке](https://code.visualstudio.com/) и скачиваем VSCode.
 2. Настраиваем settings.json под себя. Мой вариант находится [здесь](https://github.com/ArthurLokhov/arthur-dotfiles)
 
-## Установка CodeTrack
-1. Скачать можно [здесь](https://www.getcodetrack.com/releases.html#latest)
-
 ## Установка Insomnia
 1. Скачать можно [здесь](https://insomnia.rest/download#windows)
-
-## Установка Nuget Package Explorer
-1. Скачать можно [здесь](https://apps.microsoft.com/store/detail/nuget-package-explorer/9WZDNCRDMDM3)
 
 ## (Опционально) Второстепенный софт
 1. Скачать WinDbg можно [здесь](https://apps.microsoft.com/store/detail/windbg-preview/9PGJGD53TN86)
@@ -45,9 +39,6 @@ winget install Microsoft.PowerToys --source winget
 5. Скачать Богоподобные утилиты NirSoft можно [здесь](http://www.nirsoft.net/)
 6. Скачать WinDirStat можно [здесь](https://windirstat.net/)
 7. Скачать VLC можно [здесь](https://www.videolan.org/vlc/)
-
-## Установка .Net
-1. Скачать можно [здесь](https://dotnet.microsoft.com/en-us/download)
 
 ## Включение режима Бога в Windows
 1. Создаем папку с названием `God Mode.{ED7BA470-8E54-465E-825C-99712043E01C}`

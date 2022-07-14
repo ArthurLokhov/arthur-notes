@@ -4,25 +4,9 @@
 
 ### Main
 
-- `Better Comments` by Aaron Bond
-- `Quit Control for VSCode` by Artur Diniz Adam
-- `Path Intellisense` by Christian Kohler
-- `EditorConfig for VS Code` by EditorConfig
-- `gitignore` by CodeZombie
-- `Peek Hidden Files` by Adrian Wilczynski
-
-### C# and .Net
-- `C#` by Microsoft
-- `Nuget Package Manager` by jmrog
-- `Nuget Gallery` by pcislo
-- `C# XML Documentation Comments` by Keisuke Kato
-- `.NET Core Test Explorer` by Jun Han
-- `MSBuild project tools` by tintoy
-- `.NET Core Tools` by Jun Han
-- `C# Extensions` by JosKreativ
+Comming Soon
 
 ### Customization
-- `Night Owl` by sarah.drasner
 - `Material Theme Icons` by Equinusocio
 
 ## Global settings.json (this file is published in my other repository `arthur-dotfiles`)
@@ -93,11 +77,4 @@ Some manipulations with colors, font styles for certain places in the code.
         }
     ]
 },
-```
-
-4. C# Settings
-
-```json
-"omnisharp.enableImportCompletion": true,
-"omnisharp.organizeImportsOnFormat": true,
 ```
