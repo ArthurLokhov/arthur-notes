@@ -45,7 +45,7 @@ sudo apt-get install mesa-vulkan-drivers mesa-vulkan-drivers:i386
 
 ## Configuring software and Linux for everyday use
 
-1. Install 'Yandex Browser` and configure it
+1. Install `Yandex Browser` and configure it
 Go to [path](browser://flags) and turn on `System windows controls` 
 2. Set wallpaper and theme of apps, icons, cursor
 3. Install `Telegram`

@@ -14,7 +14,7 @@ sudo apt-get update && sudo apt-get upgrade -y
 sudo apt-get install -y git curl wget mosh
 sudo apt-get install -y gcc make build-essential
 sudo apt-get install -y neofetch lsb-release
-sudo apt-get install -y apt-transport-https ca-certificates software-properties-common gnupg2 
+sudo apt-get install -y apt-transport-https ca-certificates software-properties-common gnupg gnupg2 
 ```
 
 Настройка zsh
@@ -25,23 +25,33 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 ```
 
-## Установка Docker
+## Docker
+1. Удаление старых версий Docker'а
+```
+sudo apt-get remove docker docker-engine docker.io containerd runc
+```
 
-Подключаем репозиторий с Docker
+2. Установка Docker'а из подключенного репозитория
 ```
 sudo apt-get update
-curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
-sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable"
+sudo apt-get install -y ca-certificates curl gnupg lsb-release
+sudo mkdir -p /etc/apt/keyrings
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+echo \
+  "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu \
+  $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 sudo apt-get update
+sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin
 ```
 
-Убедитесь, что установка пойдет из репозитория Docker, а не Debian.
+3. Установка определенной версии
 ```
-apt-cache policy docker-ce
+apt-cache madison docker-ce
+sudo apt-get install docker-ce=<VERSION_STRING> docker-ce-cli=<VERSION_STRING> containerd.io docker-compose-plugin
 ```
 
-Устанавливаем Docker
+4. Включение/Отключение Docker Engine
 ```
-sudo apt install docker-ce
-sudo systemctl status docker
+sudo systemctl start/stop docker.service
+sudo systemctl start/stop docker.socket
 ```
